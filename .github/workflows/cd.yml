@@ -1,0 +1,23 @@
+﻿name: CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+        
+    - name: Build
+      run: dotnet publish backend/JAQOps.API/JAQOps.API.csproj -c Release -o ./publish
+      
+    # Add deployment steps specific to your chosen hosting platform
+    # This is a placeholder
