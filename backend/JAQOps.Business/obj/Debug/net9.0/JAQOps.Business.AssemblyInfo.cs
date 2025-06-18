@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JAQOps.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3909b1285ea28fedbdc9db09c7f33872bab7eb2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a6803e89ca99d804197a151608dae86b1b98e72")]
 [assembly: System.Reflection.AssemblyProductAttribute("JAQOps.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JAQOps.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

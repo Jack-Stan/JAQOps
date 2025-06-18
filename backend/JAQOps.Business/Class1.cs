@@ -1,6 +1,7 @@
 ﻿namespace JAQOps.Business;
 
-public class Class1
+// This file will be removed once all business logic is implemented
+public class BusinessLayerSetup
 {
-
+    // Placeholder class for the business layer
 }

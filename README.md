@@ -25,16 +25,16 @@ JAQOps biedt een uitgebreid pakket aan functionaliteiten die typische uitdaginge
 ## 🛠️ Tech stack
 
 **Backend**  
-- ASP.NET Core 8 Web API (C#)  
+- ASP.NET Core 9 Web API (C#)  
 - Entity Framework Core  
-- PostgreSQL database  
+- MySQL database  
 - SignalR (Realtime communicatie)  
 - Hangfire (Background jobs & taakverwerking)  
 - JWT-authenticatie met multi-tenant ondersteuning  
 - Docker containerisatie
 
 **Frontend**  
-- React 18 + TypeScript  
+- React 19 + TypeScript  
 - Zustand (lichte state management)  
 - TailwindCSS (styling)  
 - React Router v6 (routing)  
@@ -64,3 +64,50 @@ JAQOps biedt een uitgebreid pakket aan functionaliteiten die typische uitdaginge
    ```bash
    git clone https://github.com/yourusername/jaqops.git
    cd jaqops
+   ```
+
+2. Start de MySQL database en de API met docker-compose:
+   ```bash
+   docker-compose up -d mysql
+   ```
+
+3. Installeer backend dependencies en start de API:
+   ```bash
+   cd backend
+   dotnet restore
+   cd JAQOps.API
+   dotnet run
+   ```
+
+4. Installeer frontend dependencies en start de React app:
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+5. Open in je browser:
+   - Frontend: http://localhost:3000
+   - API: http://localhost:5000
+   - Swagger API docs: http://localhost:5000/swagger
+   - Hangfire dashboard: http://localhost:5000/hangfire
+
+### Development met Docker
+
+Om de hele applicatie met Docker te draaien:
+
+```bash
+docker-compose up -d
+```
+
+### Login gegevens
+
+Voor de demo setup kan je inloggen met:
+- Email: admin@jaqops.com
+- Password: Admin123!
+
+---
+
+## 📝 Licentie
+
+Copyright © 2025 JAQOps. Alle rechten voorbehouden.
